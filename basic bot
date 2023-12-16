@@ -1,0 +1,15 @@
+import discord
+
+from discord.ext import commands
+TOKEN_NUMBER='MTE4NTUwOTY4Njc4MzUwODQ5MA.GiQCmy.eyPX1nzl_1v4sNCwxCCominta8ciqSuKn5Plwc'
+CHANNEL_ID=1185516852877721712
+
+bot=commands.Bot(command_prefix="!",intents=discord.Intents.all())
+
+
+
+@bot.command()
+async def hello(ctx):
+  await ctx.send("Hello world")
+
+bot.run(TOKEN_NUMBER)
